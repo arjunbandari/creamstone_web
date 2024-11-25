@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .carousel-item img {
+            width: 95vw; /* Set width to cover 95% of the viewport width */
+            height: 40vw; /* Set height to 40% of the viewport width */
+            border-top: 0vh solid transparent; /* 2% of the viewport height for top border */
+            border-right: 2vw solid transparent; /* 2% of the viewport width for right border */
+            border-left: 3vw solid transparent; /* 3% of the viewport width for left border */
+            border-bottom: 0vh solid black; /* No bottom border */
+            border-radius: 0px; /* No rounded corners */
+            padding: 3px; /* Compensate for the border size with padding */
+            box-sizing: border-box; /* Include border thickness in width calculation */
+        }
+    </style>
+        <style>
+            body{font-family:Arial,sans-serif;line-height:1.6;margin:0;padding:0;background-color:#f9f9f9;text-align:center;padding-top:50px}h1{font-size:48px;color:#333;margin-bottom:20px;text-shadow:2px 2px 4px rgba(0,0,0,.3);background:linear-gradient(45deg,#ffcc00,#ff6699);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to our <span style="color:#ffcc00;">cream</span> stone</h1>
+    
+<div class="container-fluid my-4">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="500"> <!-- Continuous sliding -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://assets-global.website-files.com/5e9ebc3fff165933f19fbdbe/61b31c9d289e22335b6753b2_Ice%20Cream%202.jpg" class="d-block mx-auto" alt="Ice Cream 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg/640px-Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg" class="d-block mx-auto" alt="Ice Cream 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://blogscdn.thehut.net/wp-content/uploads/sites/478/2016/04/05105624/choco-malt-shake.jpg" class="d-block mx-auto" alt="Choco Malt Shake">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .album {
+            width: 20%; /* Each album takes 30% of the container */
+            margin: 1%; /* Margin between albums */
+            display: inline-block; /* Allows albums to display side by side */
+            text-align: center;
+        }
+        .album img {
+            width: 100%; /* Image takes full width of album */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners */
+        }
+        .album p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <P align="center"><B> SELCET YOUR CHOICE</B></P>
+    <div class="container">
+        <!-- First Album -->
+        <div class="album">
+            <a href="{% url 'payment' %}">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_brybo55Kp50vEDaF120uHceh59XyjHI7fQ&usqp=CAU" alt="Album 1">
+                <p> BELGIAN CHOCOLATE</p>
+                <p>RS.250</p>
+            </a>
+        </div>
+        <!-- Second Album -->
+        <div class="album">
+            <a href="{% url 'payment' %}">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFec0RWxYGiuSp9JtTmZp2BJQVkUbSPqAnjQ&usqp=CAU" alt="Album 2">
+                <p>CHERRIS JUBILEE</p>
+                <p>RS.340</p>
+            </a>
+        </div>
+        <!-- Third Album -->
+        <div class="album">
+            <a href="{% url 'payment' %}">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4jZ9wnCylyOatjPuFU5KgUczl_OJuTTb4XQ&usqp=CAU" alt="Album 3">
+                <p> CHOCOLATE TRUFF </p>
+                <p>RS.70</p>
+            </a>
+        </div>
+        <!-- Fourth Album -->
+        <div class="album">
+            <a href="{% url 'payment' %}">
+                <img src="https://publish.purewow.net/wp-content/uploads/sites/2/2022/02/types-of-ice-cream-kulfi.jpg?fit=680%2C489" alt="Album 4">
+                <p>BUTTER ICE4</p>
+                <p>RS.250</p>
+            </a>
+        </div>
+        <!-- Fifth Album -->
+        <div class="album">
+            <a href="{% url 'payment' %}">
+                <img src="https://assets.vogue.in/photos/614dde66af5ef00a626976e0/2:3/w_2560%2Cc_limit/nomou_icecream.jpg" alt="Album 5">
+                <p>STRABERRY </p>
+                <p>RS.350</p>
+            </a>
+        </div>
+        <!-- Sixth Album -->
+        <div class="album">
+            <a href="{% url 'payment' %}">
+                <img src="https://img.taste.com.au/2TWekadq/taste/2016/11/top-10-milkshakes-image-1-64000-1.jpg" alt="Album 6">
+                <p> CHERRY SHAKE </p>
+                <p>RS.400</p>
+            </a>
+        </div>
+        <!-- Seventh Album -->
+        <div class="album">
+            <a href="{% url 'payment' %}">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/04/chocolate-milkshake-recipe.jpg" alt="Album 7">
+                <p> CHOCOLATE SHAKE</p>
+                <p>RS.440</p>
+            </a>
+        </div>
+        <!-- Eighth Album -->
+        <div class="album">
+            <a href="{% url 'payment' %}">
+                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2016%2F02%2F03%2Fpeanut-butter-chocolate-banan-shake-mr-final-2000.jpg" alt="Album 8">
+                <p> OREO SHAKE</p>
+                <p>S.845</p>
+            </a>
+        </div>
+        <!-- Ninth Album -->
+        <div class="album">
+            <a href="{% url 'payment' %}">
+                <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/05/17/VB1207_Hot-Fudge-Milkshake_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1621275271533.jpeg" alt="Album 9">
+                <p>MILK SHAKE</p>
+                <p>RS.250</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+{% endblock body %}
+

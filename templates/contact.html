@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}contact{% endblock title %}
+
+{% block body %}
+<img src="https://media.istockphoto.com/id/1441262452/photo/communication-and-technology-concept-hand-putting-wooden-block-cube-symbol-telephone-email.webp?b=1&s=170667a&w=0&k=20&c=FtxQlZeGn__5ZHpc5zi9tx0GVTDZuZQoQcHT7mxDY4Q=" alt="Communication and Technology Concept" style="display: block; height:75vh; width:220vh; margin: 0; padding: 0;">
+<title>Contact Us</title>
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  form {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <form action="contact" method="POST">
+    {% csrf_token %}
+    <h2>Contact Us</h2>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address"><br>
+    <label for="phone">Phone:</label><br>
+    <input type="text" id="phone" name="phone"><br>
+    <label for="reason">Why do you want to contact us?</label><br>
+    <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
+{% endblock body %}

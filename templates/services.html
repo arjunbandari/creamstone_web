@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}services{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            text-align: center;
+            color: #ff6f61;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image-container img {
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>Family Pack</h2>
+        <div class="image-container" id="family-pack-images">
+            <img src=" https://caramellas.in/wp-content/uploads/2021/04/4058.jpg" alt="Family Pack Image 1">
+            <img src=" https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/o1zol2srycabbym9bnk4" alt="Family Pack Image 2">
+            <img src=" https://5.imimg.com/data5/PA/IL/MY-9134447/1-litre-ice-cream-family-pack.jpg" alt="Family Pack Image 3">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Softy</h2>
+        <div class="image-container" id="softy-images">
+            <img src=" https://5.imimg.com/data5/ANDROID/Default/2022/3/UH/DY/RM/4328300/product-jpeg-500x500.jpg" alt="Softy Image 1">
+            <img src=" https://b2b.swissbake.ch/images/product/SB-SOFT-SERVE--VANILLA-1kgBag-Prod279-4-0102230621591.jpg" alt="Softy Image 2">
+            <img src=" https://www.happinesscreativity.com/wp-content/uploads/2023/05/ice-cream-1000x550.jpg" alt="Softy Image 3">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Shakes</h2>
+        <div class="image-container" id="shakes-images">
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2016%2F02%2F03%2Fstrawberry-shortcake-shake-mr-2000.jpg" alt="Shakes Image 1">
+            <img src="https://www.eatingbirdfood.com/wp-content/uploads/2022/12/chocolate-protein-shake-hero.jpg " alt="Shakes Image 2">
+            <img src="https://www.rhubarbarians.com/wp-content/uploads/2020/01/red-wine-milkshake-featured.jpg" alt="Shakes Image 3">
+        </div>
+    </div>
+</body>
+</html>
+
+
+{% endblock body %}

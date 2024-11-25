@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}about{% endblock title %}
+
+{% block body %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Creams and Milkshakes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333; /* Text color */
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .location {
+            font-style: italic;
+            color: #888; /* Location text color */
+        }
+        .quote {
+            font-style: italic;
+            color: #666; /* Quote text color */
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #FFB03B;
+        }
+        img {
+            width: 100%;
+            max-width: 120vh;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/7/2016/07/270716_Milkshakes-MightySmallCafe-KamalaMills.jpg" alt="Milkshakes">
+        <p>Indulge in delicious ice creams and refreshing milkshakes at our café in Jubilee Hills, Hyderabad.</p>
+        <p class="location">Location: Jubilee Hills, Hyderabad</p>
+        <p class="quote">"Life is uncertain. Eat dessert first." - Ernestine Ulmer</p>
+        <p class="quote">"All you need is love. But a little chocolate now and then doesn't hurt." - Charles M. Schulz</p>
+        <p class="quote">"There is no sincerer love than the love of food." - George Bernard Shaw</p>
+    </div>
+</body>
+</html>
+
+
+{% endblock body %}

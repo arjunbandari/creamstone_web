@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}contact{% endblock title %}
+
+{% block body %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    .payment-heading {
+        font-size: 24px;
+        color: #ff6f61; /* Red color */
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+    .payment-image {
+        width: 20%; /* Adjust width as needed */
+        margin: 20px auto; /* Center the image */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    }
+</style>
+</head>
+<body>
+<h1 class="payment-heading">Payment</h1>
+<img src="https://i.pinimg.com/564x/13/be/1c/13be1c09d0b6f76f00f69bb5053af3df.jpg" alt="Payment Image" class="payment-image">
+<div class="container">
+    <!-- payment_form.html -->
+    <h1>Enter Payment Details</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <label for="name">name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="order">order item:</label><br>
+        <input type="text" id="order" name="order" required><br>
+        <label for="no">table no:</label><br>
+        <input type="text" id="no" name="no"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+{%endblock body%}
